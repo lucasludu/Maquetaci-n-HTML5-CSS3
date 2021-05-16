@@ -1,0 +1,12 @@
+/** Fonts **/
+body { font-family: Verdana, Geneva, Tahoma, sans-serif}
+
+@font-face {
+    font-family:miFuente ;
+    src: url(fuente/fuente.ttf);
+}
+
+h1 { 
+	font-family: miFuente; 
+	font-size: 70px;
+}
