@@ -1,0 +1,104 @@
+/** Selector Universal **/
+* { /** Todo tenga un margen 0 **/
+	margin: 0;
+	box-sizing: border-box; /** Border Box no suma el alto y el ancho de la caja 
+								con Content Box si los suma. **/
+}
+
+
+body, header, nav, main, footer {
+	width: 100%;
+}
+
+body {
+	height: auto;
+	font-family: 'Alatsi', sans-serif;
+}
+
+header {
+	height: 250px;
+	background-color: #0489B1;
+}
+
+header nav {
+	height: 50px;
+	background-color: #0B4C5F;
+}
+
+h1 {
+	margin: 15px;
+	/** margin: 30px; Va tomar esta ultima **/
+	color: rgb(255, 255, 255);
+}
+
+main {
+	height: 600px;
+	background-color: #000;
+	padding-top: 25px; /* Es lo mismo que hacer margin top en #left,right y section */
+}
+
+/** PROPIEDAD FLOAT (left - right) **/
+#left, #right {
+	width: 25%; /* 25% */
+	height: 550px; /** o ponerle 100% de todo el alto del main **/
+	background-color: #A4A4A4;
+	/* margin-top: 25px; */
+}
+
+/** PADDING **/
+#left {
+	float: left; /** Mueve el section hacia la derecha **/
+	padding: 15px; /** Afecta a las 4 coordenadas **/
+	/* padding-left: 15px; */
+	/* padding: 15px 75px;  15px para arriba/abajo y 75px left/right */
+	/* padding: 0px 10px 150px; 0 TOP 10px left/right y 150px BOTTOM*/
+	/* padding: 50px 10px 75px 0; Sentido aguaja de reloj, empieza desde TOP */
+}
+
+#right {
+	 float: right; /** Va quedar flotando a la derecha **/
+	/** clear: both; **/
+	background-image: url(../imagenes/dog.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	/* background-attachment: scroll; */
+}
+
+section {
+	width: 50%; /* 50% */
+	height: 550px;
+	float: left; /** Flota hacia la derecha del elemento left **/
+	background-color: #585858;
+	padding: 15px;
+	color: white;
+	/* border: double 8px yellow; */
+	/* border-left: rgba(0,0,0,0.3) solid 2px;
+	border-right: rgba(0,0,0,0.3) solid 2px; */
+
+	/* outline - borde del borde */
+	/* outline: 3px red solid; */
+
+	/* margin: 15px; */
+	/* margin-top: 25px; */
+}
+
+/*
+section:hover {
+	border: double 8px green;
+	background-color: deepskyblue;
+}
+*/
+
+h2 {
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+footer {
+	height: 300px;
+	background-color: #0B4C5F;
+} /** DEJE EN 2:09 HS **/
