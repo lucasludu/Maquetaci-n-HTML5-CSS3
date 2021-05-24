@@ -1,0 +1,145 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body, header, main, nav, footer {
+	width: 100%;
+} 
+
+body {
+	height: auto;
+	font-family: "alatsi", sans-serif;
+	margin: 0;
+}
+
+header {
+	height: 250px;
+	background-color: #8A0829;
+}
+
+/* Menu de navegacion */
+nav {
+	height: 50px;
+	background-color: #610B21;
+}
+
+nav ul {
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+nav ul li {
+	color: white;
+	list-style: none;
+	/* float: left;  Muevo todo a la izquierda de otro */
+	display: inline-block; /* El menu se pone en linea horizontal pero que no pierda la caracteristica del bloque */
+	margin-right: 2px;
+	background-color: #3B0B17;
+	width: 150px;
+	/*padding: 6px;*/
+	height: 50px;
+	text-align: center;
+	line-height: 50px; /* Le damos el mismo alto del contenedor general (nav) */
+	cursor: pointer;
+}
+
+/** Pesudo Clases **/
+nav ul li:hover {
+	background-color: #610B21;
+	font-size: 20px; 
+}
+
+ul li:first-child { /*Primer hijo*/
+	background-color: #04B486;
+}
+
+ul li:nth-child(2) { /*Entre el primer y ultimo hijo se lo numera con nth*/
+	background-color: red;
+}
+
+ul li:last-child { /*Ultimo hijo*/
+	background-color: fuchsia;
+}
+
+.bloque a:link {
+	color: green;
+	text-decoration: none;
+}
+
+.bloque a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.bloque a:active {
+	color: grey;
+	text-decoration: none;
+}
+
+.bloque a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+/** FOCUS: Cuando hago click cambia la forma **/
+input:focus {
+	width: 100%;
+	height: 40px;
+	background-color: darkseagreen;
+}
+
+input:hover {
+	background-color: burlywood;
+}
+
+
+/* FLEXBOX = Se lo aplico siempre al contenedor - Si pongo mas del 100% lo que hace flexbox es ajustarlos */
+main {
+	height: 750px;
+	background-color: transparent;
+	display: flex; /* Pone las columnas una al lado de la otra */
+	flex-direction: row;
+	justify-content: space-evenly; /* Deja el mismo espacio en todos los lados del bloque */
+	align-items: center; /* Dejamos el mismo espacio entre top y buttom */
+	flex-wrap: wrap;  /* Si no entra el ancho del contenido lo baja automaticamente */
+
+	/* flex-wrap: wrap-reverse;  lo sube automaticamente al banner */
+	/* Justify content --> desde el lado horizontal */
+	/* justify-content: flex-end;  Empieza a la izq y termina en la derecha */
+	/* justify-content: space-around;  Deja espacio alrededor de los elementos (Espacio start + Espacio End = Espacio entre medio) */
+	/* justify-content: space-between; Deja el mismo espacio entre los bloques */
+	/* Align items --> desde el lado vertical */
+	/* Otra propiedad es el strectch */
+	/*align-items: stretch;  Estira los elementos. Empieza pegado arriba y pegado abajo (saco height de .bloque) */
+}
+
+.bloque {
+	width: 31.33%;
+	height: 550px;
+	background-color: #F5A9BC;
+	padding: 15px;
+}
+
+#banner {
+	width: 97%;
+	height: 150px;
+	background-color: #6A0888;
+	padding: 15px;
+	color: #fff;
+}
+
+#banner h2 {
+	margin-top: 0;
+}
+
+.bloque h2 {
+	margin-top: 0;
+}
+
+
+footer {
+	height: 350px;
+	background-color: #8A0829;
+}

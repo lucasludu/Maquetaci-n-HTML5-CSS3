@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+
+body {
+    background-color: wheat;
+    font-family: 'Hanalei', cursive;
+}
+
+div {
+    -webkit-background-clip: text;
+    padding: 10px;
+    background-clip: text;
+    background-image: url(../imagenes/fondo.png);
+}
+
+h1 {
+    color: transparent;
+    font-size: 40px;
+}
