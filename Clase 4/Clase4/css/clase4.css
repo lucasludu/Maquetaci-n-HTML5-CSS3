@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1100px;
+    height: 1500px;
+    font-family: 'Alatsi', sans-serif;
+    margin: auto;
+}
+
+#contenedor {
+    width: 350px;
+    height: 400px;
+    background-color: #D8D8D8;
+    padding: 15px;
+    border: 1px rgba(0, 0, 0, 0.7) solid;
+    overflow: auto; /* Lo mismo que el anterior pero solo me hace el scroll vertical */
+    margin-bottom: 50px;    
+    /* overflow: hidden; /* Todo lo que se desborda lo oculto, pero no puedo leer el resto */
+    /* overflow: scroll; /* Crea la barra de scroll para poder ver lo que esta oculto */
+}
+
+#contenedor:hover {
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.7); 
+}
+
+ul {
+    list-style-type: square;
+    list-style: none;
+    margin-left: -25px; /* Muevo 25 px hacia atras */
+}
+
+/** Pseudo Elementos **/
+ul li::before {
+    content: url(../imagenes/raya.png);
+}
+
+ul li::after {
+    content: url(../imagenes/tilde.png);
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+#contenedor img {
+    width: 100%;
+    height: auto;
+}
+
+textarea {
+    width: 350px;
+    height: 250px;
+    background-color: #E0F2F7;
+    /* resize: both; /* Redimenciono en ambos lados */
+    /* resize: vertical; /* Solo lo redimenciono verticalmente */
+    resize: none; /* NO lo quiero redimencionar */
+    font-family: 'fantasy';
+}
+
+#capital::first-letter {
+    font-size: 500%;
+    float: left;
+    margin-top: -25px;
+    margin-bottom: -20px;
+    margin-right: 5px;
+    font-family: 'Times New Roman';
+}
+
+h2 {
+    margin-top: 0;
+}

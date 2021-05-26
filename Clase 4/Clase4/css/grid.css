@@ -1,0 +1,41 @@
+
+section {
+    width: 95%;
+    height: 95%;
+    background-color: #D8D8D8;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    display: grid; /* Los elementos estan encolumnados */
+    /* grid-template-columns: 150px auto; /* La 1ra Colum 150px y la 2da columna el resto del espacio */
+    grid-template-rows: 200px 75px; /* 1ra fila 200px 2da fila 75px */
+    grid-column-gap: 10px; /* Me permite crear espacio entre columnas */
+    grid-row-gap: 10px;
+    grid-template-rows: 200px 100px 250px; /* A difrencia de Column no me estira el 3ro */
+    /* grid-template-columns: 100px 200px; /* Divide en dos partes, la 1ra en 100px y la 2da en 200px */
+    /* grid-template-columns: 100px; /* Cada columna tiene un ancho de 100px */
+    /* grid-template-columns: auto auto; /* La 1ra col y la 2da col al 50% del contenedor */
+    /* grid-template-columns: 150px 200px auto; /* 1ra 150px, 2da espacio restante, 3ro 100px */
+    /* grid-template-columns: 150px auto auto; */
+}
+
+#Caja1 {
+    background-color: forestgreen;
+    grid-column-start: 2; /* Este elemento se mueve a la Col 2 y por ende mueve el resto */
+    /* grid-column-start: 4; /* Ocupa el valor del ancho de la posicion 3 */
+    grid-column-end: span 2; /* Se expande para ocuar 2 Colmnas o 2 Espacios */
+}
+
+
+#Caja2 {
+    background-color: firebrick;
+}
+
+
+#Caja3 {
+    background-color: dodgerblue;
+}
+
+
+#Caja4 {
+    background-color: darkslategrey;
+}

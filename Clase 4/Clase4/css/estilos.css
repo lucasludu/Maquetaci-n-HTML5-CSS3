@@ -1,0 +1,36 @@
+/** Importo otras hojas de estilo en la hoja madre **/
+@import url(grid.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+}
+
+header, main, body, footer {
+    width: 100%;
+}
+
+header {
+    height: 250px;
+    background-color: darkviolet;
+}
+
+main {
+    height: 700px;
+    background-color: #F2F2F2;
+}
+
+p {
+    margin-top: 0;
+}
+
+footer {
+    height: 300px;
+    background-color: darkviolet;
+}
+
