@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+    background-color: #fff;
+    width: 200px;
+    margin: auto;
+}
+
+ol {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+li:first-child {
+    background-image: url(../imagenes/milk.png);
+}
+
+li {
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    background: #fff url(../imagenes/mapa.png) no-repeat;
+    padding: 0 0 5px 55px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    background-image: url(../imagenes/ojotas.png);
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    padding: 20px;
+    resize: both;
+    background-color: #333;
+    margin: auto;
+}

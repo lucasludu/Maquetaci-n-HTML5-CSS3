@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, nav, header, #relleno {
+    width: 100%;
+}
+
+body {
+    height: 1000px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+                               /******************* NAV *******************/
+
+#btn { /* DEJE EN 2 HORA 12 MINUTOS*/
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+    position: fixed;
+    cursor: pointer;
+}
+
+#btn img {
+    width: 64px;
+    height: 64px;
+}
+
+#btn:hover {
+    opacity: 0.5;
+}
+
+#relleno {
+    height: 50px;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+    /* Va quedar debajo del header cuando hacemos scroll y salimos del header va apareecer */
+    position: fixed; /* Lo va fijar en el lugar */
+    z-index: 100; /* Se encuentra a 100 capas hacia arriba */
+}
+
+nav h1 {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 41px;
+    margin-top: 0;
+}
+
+nav h1::first-letter {
+    color: red;
+}
+
+nav ul { 
+    width: 1000px;
+    height: auto;
+    position: absolute; /* Como lo voy a mover le pongo position absolute */
+    right: 10px;
+    margin-top: 4px;
+}
+
+ul li {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    padding-top: 10px;
+    /*letter-spacing: 0.5px;*/
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+                               /******************* HEADER *******************/
+
+ul li:first-child {
+    background-color: green;
+}
+
+ul li:hover {
+    background-color: green;
+    color: black;
+}
+
+header {
+    height: 500px;
+    background-color: transparent;
+    /* position: static; /* No hay ningun cambio, posicion por defecto */
+    position: relative; /* El contenedor siempre va con position relative, para poder mover el elemento */
+    background-image: url(../imagenes/boxeo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Propiedad POSITION */
+#logo {
+    width: 300px;
+    height: 267px;
+    position: absolute; /* Va estar posicionado a su contenedor header (Todo absolute debe estar dentro de un relative) */
+    top: 30px; /* Muevo 30px desde arriba hacia abajo */
+    right: 30px;/* Lo mismo del anterior pero del lado contrario */
+    /* left: 30px; /* Desde la izquierda se mueve hacia la derecha 30px */
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}

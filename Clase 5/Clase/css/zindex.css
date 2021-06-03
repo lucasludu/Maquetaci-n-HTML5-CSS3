@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Alatsi', sans-serif;
+    position: relative; /* El contenedor de todo debe ser relative */
+}
+
+#bloque1, #bloque2, #bloque3, #bloque4 {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+#bloque1 {
+    background-color: turquoise;
+    position: absolute;
+    z-index: 1;
+}
+
+#bloque2 {
+    background-color: tomato;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    z-index: 5;
+}
+
+#bloque3 {
+    background-color: slateblue;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    z-index: 52;
+}
+
+#bloque4 {
+    background-color: chocolate;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    z-index: 30;
+}
+
+p {
+    margin-top: 0;
+}
