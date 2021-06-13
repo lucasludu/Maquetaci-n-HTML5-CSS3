@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+@font-face {
+    src: url(../fuentes/Lato-normal.ttf);
+    font-family: miFuente;
+}
+
+@font-face {
+    src: url(../fuentes/Lato-italic.ttf);
+    font-family: miFuente;
+    font-style: italic;
+}
+
+label {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    font-family: miFuente, sans-serif;
+}
+
+input, button {
+    margin-top: 15px;
+    border-radius: 10px/10px;
+    width: 200px;
+    height: 30px;
+    background-color: #CCC;
+    border: 2px solid black;
+    outline: none;
+    padding: 5px;
+    box-shadow: 1px 2px 11px gray;
+}
+
+input[type="number"], button, input[type="date"], input[type="time"] {
+    width: 100px;
+}
+
+body {
+    background-image: url(../imagen/fondo.jpg);
+}
+
+h1, label {
+    text-shadow: 1px 2px 3px gray;
+}
+
+form {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 20px/20px;
+    box-shadow: 2px 3px 50px 10px rgba(40, 40, 40, 0.5);
+}
+
+input[placeholder] {
+    font-style: italic;
+}
+
+button {
+    background-color: #FF6600;
+    height: 35px;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+/* Propiedades para Móvil */
+* {
+    box-sizing: content-box;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-color: #E0F2F7;
+    font-family: 'oswald';
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+main p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+#f2 {
+    display: none; /* La foto 2 desaparece */
+}
+
+/* Puntos de quiebre - Breackpoints -
+   Tablet */
+
+@media screen and (min-width: 768px) { /* A partir de 768 */
+
+    body {
+        background-color: #58ACFA;
+    }
+
+    h1, p {
+        color: white;
+    }
+
+    img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+/* ESCRITORIO */
+@media screen and (min-width: 1200px) {
+    
+    body {
+        background-color: white;
+    }
+
+    h1, p {
+        color: green;
+    }
+
+    #f2 {
+        display: block;
+        float: right;
+    }
+
+    img {
+        display: inline;
+        width: 48%;
+    }
+
+}

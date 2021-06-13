@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 6 / HTML-CSS</title>
+        <!-- ESTILOS CSS EXTERNOS -->
+        <link rel="stylesheet" href="css/jerarquias2.css">
+        <link rel="stylesheet" href="css/jerarquias.css"> <!-- El ultimo tiene mas jerarquia -->
+
+        <!-- ESTILOS CSS INTERNOS 
+        <style>
+
+            nav {
+                background-color: red; /*El interno tiene mas jerarquia que el externo*/
+            }
+
+        </style>
+        -->
+
+    </head>
+
+    <body>
+
+        <header></header>
+        <!--
+        <nav style="background-color: darkslateblue;"></nav> /*El stylo en linea tiene mas jerarquia que externo e interno*/
+        -->
+        <nav style="background-color: blue !important;"></nav> <!-- Este tiene mas prioridad que el !important del CSS jerarquia2 (No es conveniente) -->
+
+        <main role="main">
+            <h1 style="color: yellow;">Niveles de jerarquias</h1>
+            <p id="parrafo">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem blanditiis deserunt quae laborum autem doloremque molestias adipisci nihil neque quidem ipsam ab optio quam laudantium doloribus quos, voluptatem expedita? Omnis, fugit expedita, nostrum adipisci at aliquid quidem deleniti quas iure dolore aliquam! Atque, ut. Nihil, doloribus natus, tenetur accusamus voluptate amet, blanditiis quisquam debitis deleniti aliquam veritatis facere iure velit?
+            </p>
+
+            <h2>Jerarquias</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nihil ratione excepturi perferendis mollitia odit iste magnam rerum aut perspiciatis, distinctio, voluptate laborum dignissimos consequuntur, ullam amet possimus blanditiis dicta debitis optio minus. Ipsa dolorum suscipit quod est distinctio unde sapiente, voluptas tempore architecto id voluptates eius tenetur doloremque sit dignissimos reprehenderit aut, laborum odit impedit. Repellendus, commodi velit? Reiciendis deleniti architecto quo odio libero consequatur vero animi? Accusantium nihil eos perspiciatis animi vitae quis aliquid hic, asperiores ad veritatis?
+            </p>
+        </main>
+        
+        <section id="publicidad">
+            <h1>Aqui va una publicidad</h1>
+        </section>
+        
+        <footer></footer>
+
+
+        
+    </body>
+
+</html>

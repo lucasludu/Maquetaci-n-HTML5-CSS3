@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+body { font-family: 'Limelight', cursive;}
+
+button { 
+    background-color:aquamarine;
+    color: #333;
+    padding: 10px;
+    border:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+}
+
+button:hover { 
+    background-color:cadetblue;
+    cursor:pointer;
+}
+
+.contenedor { 
+    position: relative;
+}
+
+.contenedor a { 
+    text-decoration: none; 
+    color:white; 
+    display: block;
+    text-transform: uppercase;
+    height: 30px;
+    font-size: 10px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.contenedor a:hover { 
+    background: gray; 
+    color: black;
+}
+
+.desplegable { 
+    display:none; 
+    background-color: black;
+    width:200px;
+    position:absolute;
+    top: 40px;
+    left: 0;
+}
+
+.contenedor:hover  .desplegable { 
+    display: block;
+}
+
+.icon-arrow-down::before { 
+    color:red;
+}
+
+.icon-office::before {
+    font-size: 40px;
+    color: purple;
+}
